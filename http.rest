@@ -1,0 +1,25 @@
+@baseUrl = http://localhost:8080
+
+###
+GET {{baseUrl}}/todos
+
+###
+POST {{baseUrl}}/todos
+Content-Type: application/json
+
+{
+  "title": "Tarefa01",
+  "description": "Tarefa simples"
+}
+
+###
+PUT {{baseUrl}}/todos/1
+Content-Type: application/json
+
+{
+  "title": "Tarefa00",
+  "description": "Tarefa simpless"
+}
+
+###
+DELETE {{baseUrl}}/todos/1
